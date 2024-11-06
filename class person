@@ -1,0 +1,36 @@
+class person:
+    head = 1
+    legs = 2
+
+
+    def __init__(self,name,age,height):
+        self.name = name
+        self.age = age
+        self.height = height
+
+
+
+    def details(self):
+        print("My name is",self.name)
+        print("I am ", self.age,"years old")
+
+
+
+    def modify(self):
+        new_name=input("Enter new name:")
+        new_age=input("Enter new age:")
+        self.name = new_name
+        self.age = new_age
+
+
+
+
+
+
+
+
+
+p1 = person("Armaan",12,1.2)
+p2 = person("Danstan",56,2)
+p1.modify()
+p1.details()
